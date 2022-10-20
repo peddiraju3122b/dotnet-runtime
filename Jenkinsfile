@@ -10,8 +10,8 @@ pipeline{
         }
         stage(dotnetbuild){
             steps{
-                sh """dotnet build dotnetcoresample.csproj
-                    dotnet publish dotnetcoresample.csproj"""
+                sh 'dotnet build' 
+                sh 'dotnet publish'
             }
         }
     
